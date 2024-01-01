@@ -1,0 +1,159 @@
+Shell Scripting:
+================
+
+#############  Shell Scripting is the process of executing set of commands available in the file using SHELL is called as Shell Scripting ##############
+
+###### Shell Scripting is a Group of commands ############
+
+==> Shell Scripting is used to automate our daily routine works.
+
+==> Shell Script file will have .sh extension
+
+
+Linux Architecture:
+
+1) Application
+
+2) Shell
+
+3) Kernal
+
+4) Hardware
+
+
+==> When we execute any command in Linux then shell will process our command execution
+
+==> Shell will Verify Command syntax is valid or not
+
+==> Shell will convert our command in to kernal understandable format
+
+==> Kernal is responsible to communicate with Hardware components
+
+What is Linux ?
+
+==> Linux is a OPerating system. Operating system is an interface between user and computer hardware.
+
+==> Linux Developed by Linus Torvalds
+
+==> He born in 28th Dec 1969
+
+==> He is American Software Engineer
+
+
+pwd  --> Present working directory
+
+whoami --> to check the user
+
+date  --> to check date and time
+
+ls -l --> list of files and directory with long listing
+
+============================
+Script-1  :  work.sh
+============================
+whoami
+pwd
+date
+ls -l
+
+### Run : sh work.sh
+
+============================
+Sprint-2  : msg.sh
+============================
+echo 'Hello World'
+echo 'Welcome to DevOps World'
+echo 'DevOps is very interesting'
+
+#### Run : sh msg.sh
+---------------------------------
+
+*****************************************
+To check the Shell in Linux Machine  echo $SHELL
+output : /bin/bash    is the shell we are using
+Default shell
+
+#! /bin/bash  ==> Shabag
+
+Shabag is a shell script file 
+
+Which shell we are using
+*******************************************
+
+============================
+Script-3  : NameDemo.sh
+============================
+#! /bin/bash
+
+echo 'Enter Your Name'
+read Ram
+echo "Good Morning Ram"
+
+### Run : sh NameDemo.sh
+
+
+==========================
+Script-4  : Sum.sh
+==========================
+#! /bin/bash
+
+a=10
+b=20
+c=$(($a+$b))
+echo "Sun is :$c"
+
+
+===============================
+Real-Time Task:
+vi aws_resource_tracker.sh
+===============================
+# This script will report the aws resource usage
+  
+# AWS S3 buckets
+# AWS EC2 Instances
+# AWS Lambda functions
+# AWS IAM List of users
+
+# List s3 Buckets 
+echo "Print List of S3 Buckets"
+aws s3 ls
+
+# List of EC2 Instances
+echo "Print List of EC2 instances"
+aws ec2 describe-instances
+
+# List of IAM Users
+echo "Print List of IAM Users"
+aws iam list-users
+
+# List of Lambda functions
+echo "Print List of Lambda Functions"
+aws lambda list-functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
